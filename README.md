@@ -52,12 +52,10 @@ Vaccination_CRUD/
 
 ## Setup Instructions
 
-1️⃣ Clone Repository
-```bash
+### 1️⃣ Clone Repository
 git clone https://github.com/aashi984/Younderbots-TaskAssignment1_Updated.git
 
 2️⃣ Install Required Packages
-bash
 pip install -r requirements.txt
 
 3️⃣ Database Setup
@@ -72,7 +70,6 @@ Update your database credentials inside database.py file if needed:
 DATABASE_URL = "mysql+pymysql://root:@127.0.0.1:3306/vaccination_data"
 
 5️⃣ Run the Application
-bash
 uvicorn main:app --reload
 Open in browser:
 http://127.0.0.1:8000/
