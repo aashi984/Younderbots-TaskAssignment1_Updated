@@ -74,10 +74,19 @@ uvicorn main:app --reload
 Open in browser:
 http://127.0.0.1:8000/
 
-Screenshots
 
-Add Record Form
-Vaccination Records Table (Before Update)
-Edit Vaccination Record
-Vaccination Records Table (After Update)
+## Screenshots
+
+### ➡ Add Record Form
+[Add Record](screenshots/add_record.png)
+
+### ➡ Vaccination Records Table (Before Update)
+[Data Table](screenshots/data_table.png)
+
+### ➡ Edit Vaccination Record
+[Edit Record](screenshots/Update_record.png)
+
+### ➡ Vaccination Records Table (After Update)
+[Updated Table](screenshots/updated_table.png)
+
 
