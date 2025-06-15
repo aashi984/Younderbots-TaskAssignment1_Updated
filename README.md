@@ -1,8 +1,15 @@
 # Vaccination CRUD Application
 
-This is a Vaccination Registration CRUD web application developed using FastAPI, SQLAlchemy, MySQL, and HTML templates. It allows adding, viewing, updating, and deleting vaccination records.
+## Task Overview
 
----
+This project was developed as part of a task assignment for Python development at Younderbots.  
+The objective was to build a CRUD web application to manage vaccination records with:
+
+- Frontend using HTML templates.
+- Backend using Python (FastAPI).
+- Database integration using MySQL.
+- ORM using SQLAlchemy.
+
 
 ## Tech Stack Used
 
