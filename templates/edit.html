@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Vaccination</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: rgba(179, 221, 214, 0.15);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            margin: auto;
+            width: 50%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, select { /* Added select here */
+            padding: 10px;
+            margin: 8px;
+            width: 95%;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: rgb(3, 27, 52);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Edit Vaccination Record</h1>
+    <form action="/update/{{ vaccination.id }}" method="post">
+        <input type="text" name="name" value="{{ vaccination.name }}" required><br>
+        <input type="number" name="age" value="{{ vaccination.age }}" required><br>
+
+        <select name="gender" required>
+            <option value="Male" {% if vaccination.gender == 'Male' %}selected{% endif %}>Male</option>
+            <option value="Female" {% if vaccination.gender == 'Female' %}selected{% endif %}>Female</option>
+            <option value="Transgender" {% if vaccination.gender == 'Transgender' %}selected{% endif %}>Transgender</option>
+        </select><br>
+
+        <input type="text" name="vaccine_name" value="{{ vaccination.vaccine_name }}" required><br>
+        <input type="number" name="dose_number" value="{{ vaccination.dose_number }}" required><br>
+        <input type="date" name="vaccination_date" value="{{ vaccination.vaccination_date }}" required><br>
+        <input type="email" name="email" value="{{ vaccination.email }}" required><br>
+        <input type="text" name="contact_number" value="{{ vaccination.contact_number }}" required><br>
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>
